@@ -1,0 +1,137 @@
+\documentclass{article}
+\title{Solution 2}
+\author{@kyrylo}
+
+\usepackage{enumerate}
+
+\begin{document}
+
+\section*{Solutions to assignment 2}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $(\pi > 0) \wedge (\pi < 10)$ [Answer: $0 < \pi < 10$.]
+\item $(p \geq 7) \wedge (p < 12)$ [Answer: $7 \leq p < 12$.]
+\item $(x > 5) \wedge (x < 7)$ [Answer: $5 < x < 7$.]
+\item $(x < 4) \wedge (x < 6)$ [Answer: $x < 4 < 6 = x < 4$.]
+\item $(y < 4) \wedge (y^2 < 9)$ [Answer: $(y < 4) \wedge (-3 < y < 3) = -3 < y < 4$.]
+\item $(x \geq 0) \wedge (x \leq 0)$ [Answer: $x = 0$.]
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\pi$ is between 0 and 10.
+\item $p$ is greater than or equal to 7 and less than 12.
+\item $x$ is between 5 and 7.
+\item $x$ is less than 4.
+\item $y$ is between -3 and 4.
+\item $x$ is equal to 0.
+\end{enumerate}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | }
+  \hline
+  $\phi_1$ & $\phi_2$ & $\phi_n$ & $\phi_1 \wedge \phi_2 \wedge \dots \wedge \phi_n$ \\
+  \hline
+  T & T & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+If any $\phi$ is false, then the entire conjunction is false, too.
+
+\begin{tabular}{ | c | c | c | c | }
+  \hline
+  $\phi_1$ & $\phi_2$ & $\phi_n$ & $\phi_1 \wedge \phi_2 \wedge \dots \wedge \phi_n$ \\
+  \hline
+  T & F & T & F \\
+  F & T & T & F \\
+  T & T & F & F \\
+  F & F & F & F \\
+  \hline
+\end{tabular}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $(\pi > 3) \vee (\pi > 10)$ [Answer: $\pi > 3$.]
+\item $(x < 0) \vee (x > 0)$ [Answer: $x \neq 0$.]
+\item $(x = 0) \vee (x > 0)$ [Answer: $x \geq 0$.]
+\item $(x > 0) \vee (x \geq 0)$ [Answer: $x \geq 0$.]
+\item $(x > 3) \vee (x^2 > 9)$ [Answer: $(x > 3) \vee (x > 3) = x > 3$.]
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\pi$ is greater than 3.
+\item $x$ is not equal to 0.
+\item $x$ is greater than or equal to 0.
+\item $x$ is greater than or equal to 0.
+\item $x$ is greater than 3.
+\end{enumerate}
+
+\section{}
+
+If any $\pi$ is true, then the disjunction is true.
+
+\begin{tabular}{ | c | c | c | c | }
+  \hline
+  $\phi_1$ & $\phi_2$ & $\phi_n$ & $\phi_1 \vee \phi_2 \vee \dots \vee \phi_n$ \\
+  \hline
+  T & F & T & T \\
+  F & T & T & T \\
+  T & T & F & T \\
+  T & T & F & T \\
+  T & T & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+If each $\pi$ is false, then the disjunction is false. Otherwise, it's true.
+
+\begin{tabular}{ | c | c | c | c | }
+  \hline
+  $\phi_1$ & $\phi_2$ & $\phi_n$ & $\phi_1 \vee \phi_2 \vee \dots \vee \phi_n$ \\
+  \hline
+  F & F & F & F \\
+  \hline
+\end{tabular}
+
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\neg(\pi > 3.2)$ [Answer: $\pi \leq 3.2$.]
+\item $\neg(x < 0)$ [Answer: $x \geq 0$.]
+\item $\neg(x^2 > 0)$ [Answer: $\neg((x < 0) \vee (x > 0)) = \neg(x \neq 0) = 0$.]
+\item $\neg(x = 1)$ [Answer: $(x < 1) \vee (x > 1) = x \neq 1$.]
+\item $\neg\neg\phi$ [Answer: $\phi$.]
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\pi$ is less than or equal to 3.2.
+\item $x$ is greater than or equal to 0.
+\item $x$ is equal to 0.
+\item $x$ is not equal to 0.
+\item $phi$.
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $D \wedge Y$
+\item $D \wedge (\neg Y) \vee T$
+\item $\neg(D \wedge Y)$
+\item $T \wedge \neg (D \wedge Y)$
+\item $\neg T \vee (D \wedge Y)$
+\end{enumerate}
+
+\end{document}
