@@ -1,0 +1,58 @@
+\documentclass{article}
+\title{Solution 3}
+\author{@kyrylo}
+
+\usepackage{enumerate}
+
+\begin{document}
+
+\section*{Solutions to assignment 3}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $T \Rightarrow (D \wedge Y)$
+\item $D \Rightarrow \neg Y$
+\item $\neg D \Rightarrow \neg T$
+\item $T \Rightarrow \neg (D \wedge Y)$
+\item $\neg D \wedge Y \Rightarrow T$
+\item $T \Rightarrow Y \wedge \neg D$
+\item $T \Rightarrow Y \wedge D$
+\item $D \vee Y \Rightarrow T$
+\end{enumerate}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\neg \phi$ & $\psi$ & $\phi \Rightarrow \psi$ & $\neg \phi \vee \psi$ \\
+  \hline
+  T & F & T & T & T \\
+  T & F & F & F & F \\
+  F & T & T & T & T \\
+  F & T & F & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+The conclusion is that $\phi \Rightarrow \psi$ means the same as $\neg \phi \vee \psi$.
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\neg \psi$ & $\phi \Rightarrow \psi$ & $\phi \not \Rightarrow \psi$ & $\phi \wedge \neg \psi$ \\
+  \hline
+  T & T & F & T & F & F \\
+  T & F & T & F & T & T \\
+  F & T & F & T & F & F \\
+  F & T & F & T & F & F \\
+  \hline
+\end{tabular}
+
+\section{}
+
+The conclusion is that $\phi \not \Rightarrow \psi$  means the same as $\phi \wedge \neg \psi$.
+
+\end{document}
