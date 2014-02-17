@@ -1,0 +1,175 @@
+\documentclass{article}
+\title{Solution 4}
+\author{@kyrylo}
+
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{centernot}
+
+\begin{document}
+
+\section*{Solutions to assignment 4}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\phi \Leftrightarrow \psi$ \\
+  \hline
+  T & T & T \\
+  T & F & F \\
+  F & T & F \\
+  F & F & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\neg \phi$ & $\phi \implies \psi$ & $\neg \phi \vee \psi$ &  $(\phi \implies \psi) \Leftrightarrow (\neg \phi \vee \psi)$ \\
+  \hline
+  T & T & F & T & T & T \\
+  T & F & F & F & F & T \\
+  F & T & T & T & T & T \\
+  F & F & T & T & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\neg \psi$ & $\phi \centernot\implies \psi$ & $\phi \wedge \neg\psi$ &  $(\phi \centernot\implies \psi) \Leftrightarrow (\phi \wedge \neg\psi)$ \\
+  \hline
+  T & T & F & F & F & T \\
+  T & F & T & T & T & T \\
+  F & T & F & F & F & T \\
+  F & F & T & F & F & T \\
+  \hline
+\end{tabular}
+
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item
+  \begin{tabular}{ | c | c | c | c | c | }
+    \hline
+    $\phi$ & $\psi$ & $\phi \implies \psi$ & $\phi \wedge (\phi \implies \psi)$ & $[\phi \wedge (\phi \implies \psi)] \implies \psi$ \\
+    \hline
+    T & T & T & T & T \\
+    T & F & F & F & T \\
+    F & T & T & F & T \\
+    F & F & T & F & T \\
+    \hline
+  \end{tabular}
+\item
+  The statement gives truth in every case. Any combination of $\phi$ and $\psi$ is true.
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}
+\item $\phi \vee \psi$ means at least one from $\phi$ or $\psi$ must be true.
+\item Thus $\neg(\phi \vee \psi)$ means none of $\phi$ or $\psi$ is true.
+\item The conjoin $(\neg\phi) \wedge (\neg\psi)$ indicates that both $\phi$ and
+  $\psi$ must be false.
+\item Thus $(\neg\phi) \wedge (\neg\psi)$ is equivalent to $\neg(\phi \vee \psi)$.
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item 34,159 is not a prime number.
+\item Roses are not red and violets are not blue.
+\item If there are no hamburgers, I'll not have a hot dog.
+\item Fred will not go or he will play.
+\item The number $x$ is either positive or not greater than 10.
+\item We will not win the first game or the second.
+\end{enumerate}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\phi \Leftrightarrow \psi $ &  $\neg\phi$ & $\neg\psi$ & $(\neg\phi) \Leftrightarrow (\neg\psi)$ \\
+  \hline
+  T & T & T & F & F & T \\
+  T & F & F & F & T & F \\
+  F & T & F & T & F & F \\
+  F & F & T & T & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    $\phi$ & $\psi$ & $\phi \Leftrightarrow \psi $ \\
+    \hline
+    T & T & T \\
+    T & F & F \\
+    F & T & F \\
+    F & F & T \\
+    \hline
+  \end{tabular}
+
+\item
+  \begin{tabular}{ | c | c | c | c | c | }
+    \hline
+    $\phi$ & $\psi$ & $\theta$ & $\psi \vee \theta$ & $\phi \implies (\psi \vee \theta)$ \\
+    \hline
+    T & T & T & T & T \\
+    T & T & F & T & T \\
+    T & F & T & T & T \\
+    T & F & F & F & F \\
+    F & T & T & T & T \\
+    F & T & F & T & T \\
+    F & F & T & T & T \\
+    F & F & F & F & T \\
+    \hline
+  \end{tabular}
+\end{enumerate}
+
+\section{}
+
+\begin{tabular}{ | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\theta$ & $\psi \wedge \theta$ & $\phi \implies (\psi \wedge \theta)$ \\
+  \hline
+  T & T & T & T & T \\
+  T & T & F & F & F \\
+  T & F & T & F & F \\
+  T & F & F & F & F \\
+  F & T & T & F & T \\
+  F & T & F & F & T \\
+  F & F & T & F & T \\
+  F & F & F & F & T \\
+  \hline
+\end{tabular}
+\quad
+\begin{tabular}{ | c | c | c | c | c | c | }
+  \hline
+  $\phi$ & $\psi$ & $\theta$ & $\phi \implies \psi$ & $\phi \implies \theta$ & $(\phi \implies \psi) \wedge (\phi \implies \theta)$ \\
+  \hline
+  T & T & T & T & T & T \\
+  T & T & F & T & F & F \\
+  T & F & T & F & T & F \\
+  T & F & F & F & F & F \\
+  F & T & T & T & T & T \\
+  F & T & F & T & T & T \\
+  F & F & T & T & T & T \\
+  F & F & F & T & T & T \\
+  \hline
+\end{tabular}
+
+\section{}
+
+Suppose $\psi, \theta$ are true. Conjuction of them is also true, hence it is
+obvious that $\phi \implies (\psi \wedge \theta)$ is true. Implication of $\psi,
+\theta$ from $\phi$ is obvious, too. I suck at explanations.
+
+\end{document}
