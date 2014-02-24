@@ -16,15 +16,15 @@
 \begin{enumerate}[(a)]
 \item $(\exists x \in \mathbb{N})[x^3 = 27]$
 \item $(\exists x \in \mathbb{N})[x > 1000000]$
-\item $\neg((\exists n \in \mathbb{N})[n$ is prime$])$
+\item $(\exists p \in \mathbb{N})(\exists q \in \mathbb{N}[p > 1 \wedge q > 1 \wedge n = pq)$
 \end{enumerate}
 
 \section{}
 
 \begin{enumerate}[(a)]
-\item $\neg[(\forall x \in \mathbb{N})(x^3 = 28)]$
+\item $(\forall x \in \mathbb{N})\neg[x^3 = 28]$
 \item $(\forall n \in \mathbb{N})[0 < n]$
-\item $(\exists x \in \mathbb{N})[x$ is a prime$]$
+\item $(\forall p \in \mathbb{N})(\forall q \in \mathbb{N})[(n = pq \implies (p = 1 \vee q = 1)]$
 \end{enumerate}
 
 \section{}
@@ -34,18 +34,18 @@
 \item $\forall e[tall(e) \vee short(s)]$
 \item $(\forall e)[tall(e)] \vee (\forall e)[short(e)]$
 \item $\neg(\forall e)[athome(e)]$
-\item $\exists j\forall w[comes(j) \implies leave(w)]$
-\item $\forall m\forall w[comes(m) \implies leave(w)]$
+\item $Comes(John) \implies (\forall x)[Woman(x) \implies Leaves(x)]$
+\item $(\exists x)[Man(x) \wedge Comes(x)] \implies (\forall x)[Woman(x) \implies Leaves(x)]$
 \end{enumerate}
 
 \section{}
 
 \begin{enumerate}[(a)]
-\item $(\forall m \in \mathbb{R})(\exists n \in \mathbb{R})[x^2 + a = 0]$
-\item $(\forall m \in \mathbb{R})(\exists n \in \mathbb{R})[(m < 0) \wedge x^2 + a = 0]$
-\item $(\forall m \in \mathbb{R})[m \implies rational(m)]$
-\item $\forall m \in N \exists n[irrational(n)]$
-\item $\forall m \exists n[(n \in \mathbb{I}) \wedge irrational(n) > irrational(m)]$
+\item $(\forall a \in \mathbb{R})(\exists x \in \mathbb{R})[x^2 + a = 0]$
+\item $(\forall a \in \mathbb{R})[(a < 0) \implies (\exists x \in \mathbb(R)(x^2 + a = 0)]$
+\item $(\forall x \in \mathbb{R})(\exists m \in \mathbb{N})(\exists n \in \mathbb{N})[m = nx \vee m = -nx \vee x = 0]$
+\item $(\exists x \in \mathbb{R})(\forall m \in \mathbb{N})(\forall n \in \mathbb{N})[m \neq nx \wedge m \neq -nx]$
+\item $(\forall y \in \mathbb{R})(\exists x \in \mathbb{R})[(x > y) \wedge (\forall m \in \mathbb{N})(\forall n \in \mathbb{N})(m \neq nx)]$
 \end{enumerate}
 
 \end{document}
