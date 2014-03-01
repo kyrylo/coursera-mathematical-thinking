@@ -1,0 +1,82 @@
+\documentclass{article}
+\title{Solution 6}
+\author{@kyrylo}
+
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{centernot}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\section*{Solutions to assignment 6}
+
+\section{}
+
+In plain English $\neg[\exists x A(x)]$ means ``It is not the case that there
+exists $x$ such that $A(x)$ is true.
+\\\\
+In plain English $\forall x[\neg A(x)]$ means ``The function $A(x)$ is false for
+any given $x$''.
+\\\\
+The latter implies the former, it illustrates their equality.
+
+\section{}
+
+{\it There is an even prime bigger than 2}
+\\\\
+Assertion: the statement is false.
+\\\\
+Let $P(x)$: x is prime, $E(x)$: x is even. The sentence can be written
+symbolically as:
+
+$(\exists x > 2)[P(x) \implies E(x)]$.
+\\\\
+When we negate this we get:
+
+$(\forall x > 2)[P(x) \wedge \neg E(x)]$.
+\\\\
+In words, each prime number $x$ bigger than 2 is odd. An odd number is a number
+that cannot be divided by 2 without getting a fraction. Let's observe the next
+prime number, 3. In this case the original statement is false and its negation
+is true. Every other next prime number behaves the same.
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\forall x [Student(x) \implies LikesPizza(x)]$
+\item $\exists x [Friend(x) \wedge \neg HasCar(x)]$
+\item $\exists x [Elephant(x) \wedge \neg LikesMuffin(x)]$
+\item $\forall x [Triangle(x) \implies Isosceles(x)]$
+\item $\exists x [Student(x) \wedge \neg Here(x)]$
+\item $\exists x \forall y Loves(x, y)$
+\item $\forall x \forall y \neg Loves(x, y)$
+\item $\forall x \forall y[Man(x) \wedge Comes(x) \implies WomenLeave(y)]$
+\item $\forall x [Tall(x) \vee Short(x)]$
+\item $\forall x Tall(x) \vee \forall x Short(x)$
+\item $\exists x [Precious(x) \wedge \neg Beautiful(x)]$
+\item $\exists x \forall y \neg Loves(x, y)$
+\item $\exists x [AmericanSnake(x) \wedge Poisonous(x)]$
+\item $\exists x [Snake(x) \wedge AmericanSnake(x) \wedge Poisonous(x)]$
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\exists x [Student(x) \wedge \neg LikesPizza(x)]$ --- There is a student who doesn't like pizza.
+\item $\forall x [Friend(x) \implies HasCar(x)]$ --- All my friends have cars.
+\item $\forall x [Elephant(x) \implies LikesMuffin(x)]$ --- All elephants like muffins.
+\item $\exists x [Triangle(x) \wedge \neg Isosceles(x)]$ --- There's a triangle which is not isosceles.
+\item $\forall x [Student(x) \implies Here(x)]$ --- All the students are here today.
+\item $\exists x \forall y \neg Loves(x, y)$ --- Everyone dislikes somebody.
+\item $\forall x \forall y Loves(x, y)$ --- Everybody loves everybody.
+\item $\forall x \forall y[Man(x) \wedge Comes(x) \wedge \neg WomenLeave(y)]$ --- If a man comes, no women leave.
+\item $\exists x \neg [Tall(x) \vee Short(x)]$ --- There is a person that is neither tall nor short.
+\item $\exists x \neg [Tall(x) \wedge Short(x)]$ --- All people are not tall and short.
+\item $\forall x [Precious(x) \implies Beautiful(x)]$ --- All precious stones are beatuiful.
+\item $\exists x \forall y Loves(x, y)$ --- Everybody loves me.
+\item $\forall x [AmericanSnake(x) \implies Poisonous(x)]$ --- All American snakes are poisonous.
+\item $\forall x [Snake(x) \implies AmericanSnake(x) \implies Poisonous(x)]$ --- All American snakes are poisonous.
+\end{enumerate}
+
+\end{document}
