@@ -79,4 +79,49 @@ is true. Every other next prime number behaves the same.
 \item $\forall x [Snake(x) \implies AmericanSnake(x) \implies Poisonous(x)]$ --- All American snakes are poisonous.
 \end{enumerate}
 
+\section{}
+
+\begin{enumerate}[(a)]
+\item false
+\item false
+\item true
+\item false
+\item false
+\item false
+\item false
+\item false
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $\forall x [2x + 3 \neq 5x + 1]$
+\item $\forall x [x^2 \neq 2]$
+\item $\exists x \forall y [y \neq x^2]$
+\item $\exists x \forall y [y \neq x^2]$
+\item $\exists x \forall y \exists z [xy \neq xz]$
+\item $\exists x \forall y \exists z [xy \neq xz]$
+\item $\exists x [x < 0 \wedge \neg \exists y (y^2 = x)]$
+\item $\exists x [x < 0 \wedge \neg \exists y (y^2 = x)]$
+\end{enumerate}
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $(\exists x \in \mathbb{N})(\forall y \in \mathbb{N})[x + y \neq 1]$ or $(\exists x \in \mathbb{N})(\forall y \in \mathbb{N})[(x + y > 1) \vee (x + y  < 1)]$
+\item $(\exists x > 0)(\forall y < 0)[x + y \neq 0]$ or $(\exists x > 0)(\forall y < 0)[(x + y > 0) \vee (x + y < 0)]$
+\item $\forall x(\exists \epsilon> 0)\neg[-\epsilon < x < \epsilon]$ or $\forall x(\exists \epsilon> 0)[(x \leq -\epsilon) \vee (x \geq \epsilon)]$
+\item $(\exists x \in \mathbb{N})(\exists y \in \mathbb{N})(\forall z \in \mathbb{N})[x + y \neq z^2]$ or $?$
+\end{enumerate}
+
+\section{}
+
+Statement: $(\exists t)(\forall p)[Fool(p, t)] \wedge (\exists p)(\forall t)[Fool(p, t)] \wedge (\forall p)(\forall t)\neg[Fool(p, t)]$
+\\\\
+Negation: $\neg(\forall t \exists p \neg Fool(p, t) \wedge \forall p \exists t \neg Fool(p, t) \wedge \exists p \exists t Fool(p, t))$
+
+\section{}
+
+$(\exists \epsilon > 0)(\forall \delta > 0)(\exists x)[|x - a| < \delta \wedge \neg(|f(x) - f(a)| < \epsilon)]$
+
 \end{document}
