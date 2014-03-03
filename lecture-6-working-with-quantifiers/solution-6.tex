@@ -116,12 +116,12 @@ is true. Every other next prime number behaves the same.
 
 \section{}
 
-Statement: $(\exists t)(\forall p)[Fool(p, t)] \wedge (\exists p)(\forall t)[Fool(p, t)] \wedge (\forall p)(\forall t)\neg[Fool(p, t)]$
+Statement: $\exists t \forall p Fool(p, t) \wedge \exists p \forall t Fool(p, t) \wedge \neg \forall p \forall t Fool(p, t)$
 \\\\
-Negation: $\neg(\forall t \exists p \neg Fool(p, t) \wedge \forall p \exists t \neg Fool(p, t) \wedge \exists p \exists t Fool(p, t))$
+Negation: $\forall t \exists p \neg Fool(p, t) \vee \forall p \exists t \neg Fool(p, t) \vee \forall p \forall t Fool(p, t)$
 
 \section{}
 
-$(\exists \epsilon > 0)(\forall \delta > 0)(\exists x)[|x - a| < \delta \wedge \neg(|f(x) - f(a)| < \epsilon)]$
+$(\exists \epsilon > 0)(\forall \delta > 0)(\exists x)[|x - a| < \delta \wedge |f(x) - f(a)| \geq \epsilon)$
 
 \end{document}
