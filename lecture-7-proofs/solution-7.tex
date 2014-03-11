@@ -1,0 +1,93 @@
+\documentclass{article}
+\title{Solution 6}
+\author{@kyrylo}
+
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{centernot}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\section*{Solutions to assignment 7}
+
+\section{}
+
+Statement: ``All birds can fly''.
+\\
+Converting it to the language of mathematics, it means the following:
+\\\\
+$(\forall x \in Birds)[CanFly(x)]$
+\\\\
+Disproof: ostrich is a bird and it can't fly.
+\\
+QED.
+
+\section{}
+
+Statement: $(\forall x,y \in \mathbb{R})[(x - y)^2 > 0]$
+\\\\
+Disproof: if $x = p$ and $y = p$, then $x - y = p - p = 0$. Hence, $0^2 = 0$.
+The statement is false.
+\\
+QED.
+
+\section{}
+
+Statement: ``Between any two unequal rationals there is a third rational.''
+\\\\
+Proof: let $x, y$ be unequal rational numbers. Then $z = (x + y) / 2$ is a
+rational number, such that $z > x \wedge z < y$.
+\\
+QED.
+
+\section{}
+
+If $\phi \implies \psi$ and vice versa, it means that $\phi$ and $\psi$ are
+equal. $\phi \Leftrightarrow \psi$ is just a shorthand for $(\phi \implies \psi) \wedge
+(\psi \implies \phi)$.
+
+\section{}
+
+Because $(\neg\phi) \implies (\neg\psi)$ is equal to $\psi \implies \phi$.
+
+\section{}
+
+Statement: ``If five investors split a payout of \$2M, at least one investor
+receives at least \$400,000.''
+\\\\
+Proof: in order to split the payout evenly it is needed to divide it by the
+number of investors. Thus, $x = 2,000,000 / 5$. That is, $x$ is equal to
+400,000, which proves the statement.
+\\
+QED.
+
+\section{}
+
+Theorem: ``$\sqrt{3}$ is irrational.''
+\\\\
+Proof: Assume, on the contrary, that $\sqrt{3}$ were rational. Then there are
+natural numbers $p, q$ with no common factors, such that $\sqrt{3} = p / q$.
+\\
+\\
+Squaring the equation gives $3 = p^2 / q^2$. Rearranging: $3q^2 = p^2$. If $q$
+is odd, then $p^2$ is odd, otherwise $p^2$ is even. If it is even, then it is
+rational. If it is odd, then...
+
+\section{}
+
+\begin{enumerate}[(a)]
+\item $(\neg D) \implies Y$\\
+  $(\neg D) \wedge (\neg Y)$
+\item $(\exists x \in \mathbb{R})(\exists y \in \mathbb{R})[x < y \implies -y < x]$\\
+  $(\forall x \in \mathbb{R})(\forall y \in \mathbb{R})[x < y \wedge -y \geq x]$
+\item $(\exists x)(\exists y)[Congruent(x) \wedge Congruent(y) \implies SameArea(x, y)]$\\
+  $(\forall x)(\forall y)[Congruent(x) \wedge Congruent(y) \wedge \neg SameArea(x, y)]$
+\item $(\exists a \in \mathbb{R})(\exists b \in \mathbb{R})(\exists c \in \mathbb{R})(\exists x \in \mathbb{R})[a \neq 0 \wedge (b^2 \geq 4ac) \implies ax^2 + bx + c = 0]$\\
+  $(\forall a \in \mathbb{R})(\forall b \in \mathbb{R})(\forall c \in \mathbb{R})(\forall x \in \mathbb{R})[a \neq 0 \wedge (b^2 \geq 4ac) \wedge ax^2 + bx + c \neq 0]$
+\item $?$
+\item $?$
+\item $(\exists n \in \mathbb{N})[\neg D3(n) \implies ?]$
+\end{enumerate}
+
+\end{document}
