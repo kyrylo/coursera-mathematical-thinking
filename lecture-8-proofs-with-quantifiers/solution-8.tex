@@ -29,6 +29,11 @@ that $mn + 1$ is a perfect square''
 \\
 Proof: Let $A(m, n)$ denote ``$mn + 1$ is a perfect square". Hence, we're
 proving $(\forall m \in \mathbb{Z})(\exists n \in \mathbb{Z})[A(m, n)]$. Let $m$
-be an arbitrary positive integer. ?
+be an arbitrary positive integer. Set $n = m + 2$. Then $mn + 1 = m \cdot (m +
+2) + 1$ can be expressed as
+\\
+$m \cdot (m + 2) + 1 = m^2 + 2m + 1 = m^2 + m + m + 1 = (m + 1)(m + 1) = (m + 1)^2$
+\\
+This proves that $(m + 1)^2$ is a perfect square.
 
 \end{document}
