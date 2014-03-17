@@ -52,4 +52,20 @@ because it can be divided by $n + 1$ (and prime numbers can be divided only by 1
 by itself). For example: $n = 36, f(n) = (n + 1)^2 = (36 + 1)^2 = 37^2 =
 1369$. So, $1369 / (n + 1)= 1369 / (36 + 1) = 37$.
 
+\section{}
+
+Theorem: ``If every even natural number greater than 2 is a sum of two primes
+(the Goldbach Conjecture), then every odd natural number greater than 5 is a sum
+of three primes.''
+\\
+Proof: let $A(x)$ denote that $x$ can be expressed as a sum of two primes and
+let $B(x)$ denote that $x$ can be expressed as a sum of three primes. We're
+proving $(\forall x \in \mathbb{N})[x > 2 \wedge Even(x) \implies A(x)] \implies
+(\forall y \in \mathbb{N})[y > 5 \wedge Odd(y) \implies B(y)]$.  Assume that
+$(\forall x \in \mathbb{N})[x > 2 \wedge Even(x) \implies A(x)]$ is true. Since
+the next odd number after 5 is 7, we can state that $y \geq 7$ and since the
+next even number after 2 is 4 we can state that $x \geq 4$. The difference between
+7 and 4 is 3, which is a prime number. So by the Goldbach Conjecture we get
+$y - 3 = p + q$, where $p, q$ are prime numbers. Thus, $y = p + q + 3$ is a proof.
+
 \end{document}
